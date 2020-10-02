@@ -1,5 +1,5 @@
 //api 
-///const API_KEY='8498db2edf3e7d8d2468020fe9a5e04f';
+///const API_KEY='55678498db2edf3e7d8d2468020fe9a5e04f9000004654465475476654465';
 
 const url='https://api.themoviedb.org/3/search/movie?api_key=<ENTER_YOUR_API_KEY_HERE>';
 const IMG_URL='https://image.tmdb.org/t/p/w500/';
