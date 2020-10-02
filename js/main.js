@@ -1,10 +1,10 @@
 //api 
 ///const API_KEY='8498db2edf3e7d8d2468020fe9a5e04f';
 
-const url='https://api.themoviedb.org/3/search/movie?api_key=8498db2edf3e7d8d2468020fe9a5e04f';
+const url='https://api.themoviedb.org/3/search/movie?api_key=<ENTER_YOUR_API_KEY_HERE>';
 const IMG_URL='https://image.tmdb.org/t/p/w500/';
-const Popular_movies='https://api.themoviedb.org/3/movie/popular?api_key=8498db2edf3e7d8d2468020fe9a5e04f&language=en-US&page=1';
-//const MOVIE_ID_URL='https://api.themoviedb.org/3/movie/{movies.id}?api_key=8498db2edf3e7d8d2468020fe9a5e04f'
+const Popular_movies='https://api.themoviedb.org/3/movie/popular?api_key=<ENTER_YOUR_API_KEY_HERE>&language=en-US&page=1';
+//const MOVIE_ID_URL='https://api.themoviedb.org/3/movie/{movies.id}?api_key=<ENTER_YOUR_API_KEY_HERE>'
 
 //Selecting elements from the DOM
 
@@ -56,7 +56,7 @@ function createMovie(movie_data){
 function getMovie(){
     let movieId=sessionStorage.getItem('movieId');
 
-    fetch('https://api.themoviedb.org/3/movie/'+movieId+'?api_key=8498db2edf3e7d8d2468020fe9a5e04f')
+    fetch('https://api.themoviedb.org/3/movie/'+movieId+'?api_key=<ENTER_YOUR_API_KEY_HERE>')
     .then((res)=>{
         return res.json();
     })
@@ -82,7 +82,7 @@ function getMovie(){
 function getMovieVideos(){
     let movieId=sessionStorage.getItem('movieId');
 
-    fetch('https://api.themoviedb.org/3/movie/'+movieId+'/videos?api_key=8498db2edf3e7d8d2468020fe9a5e04f&language=en-US')
+    fetch('https://api.themoviedb.org/3/movie/'+movieId+'/videos?api_key=<ENTER_YOUR_API_KEY_HERE>&language=en-US')
     .then((res)=>{
         return res.json();
     })
