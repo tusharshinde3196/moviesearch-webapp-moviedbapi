@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <link rel="stylesheet" href="/css/style.css">
+    <title>The-Movie-Info</title>
+</head>
+
+<body onload="popularMovies()">
+
+    <nav id="darknav" class="navbar navbar-expand-sm ">
+
+        <div class=" brand navbar-brand">
+            <a class="navbar-brand" href="index.html"><h3>The-Movie-Info</h3></a>
+            <button class="navbar-toggler ic" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse menu" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Popular</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">High Rated</a>
+                </li>
+            </ul>
+        </div>
+
+
+    </nav>
+
+    <div class="container">
+        <div class="form-group">
+            <h4 class="text-center">Hurray!!!  You are on the best Site!</h4>
+            <div class="sform">
+            <form id="searchForm">
+                <input type="text" class="form-control" id="inputValue" placeholder="Search Movie here!">
+                <button type="submit" id="search" class="btn btn-info" onclick="allMovies(event)">Search Movie!</button>
+            </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="movies" class="row">
+
+    </div>
+    <div id="popular_title" class="popular_title">
+        <h3>Popular Movies</h3>
+    </div>
+        <div id="popular_movies" class="popular_movies" >
+
+        </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="company">
+                <h3>The-Movie-Info</h3>
+                <img src="/assets/tmdb.svg" alt="">
+            </div>
+            <div class="newsletter">
+                <h2>Subscribe For Newsletter!</h2>
+                <form action="post" netlify>
+                    <input name="email" class="email" type="email" placeholder="Email" required>
+                    <button class="btn btn-sm btn-outline-primary">Subscribe</button>
+                </form>
+            </div>
+            <div class="contact">
+                <h5>Contact Me</h5>
+                <div class="phone">
+                    <h6 href="#"><i class="fa fa-phone" style="margin: 5px;"></i>7767989838</h6>
+                </div>
+                <div class="mail">
+                    <h6 href="#"><i class="fa fa-envelope" style="margin: 5px;"></i>tusharshinde3196@gmail.com</h6>
+                </div>
+            </div>
+        </div>    
+            <div class="social-media">
+                <a href="https://m.facebook.com/tushar.shinde.9066" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="https://www.linkedin.com/in/tushar-shinde-15b850176" class="fa fa-linkedin"></a>
+                <a href="https://www.instagram.com/_tusharshinde_/" class="fa fa-instagram"></a>
+            </div>
+            <div class="copyright-1">
+                <h6>Designed and Developed by @ <a  target="_blank" href="https://tusharshinde.netlify.app/">Tushar Shinde</a></h6>
+            </div>
+        </footer>
+
+    <script src="/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+#darknav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(5, 5, 5);
+}
+.ic{
+    background-color:unset;
+    border: 2px solid aliceblue;
+}
+.menu a{
+    color: aliceblue;
+    text-decoration: none;
+}
+a h3{
+    font-family: "Allerta Stencil", Sans-serif;
+    color: aliceblue;
+}
+#searchForm{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#searchForm input{
+    width: 40%;
+}
+#searchForm button{
+    margin-left: 5px;
+}
+.navbar-brand{
+    justify-content: center;
+    text-align: center;
+}
+#movies img{
+    height: 350px;
+    width: 200px;
+    border: 2px solid white;
+    border-radius: 3% ;
+
+}
+#movies img:hover{
+    border-color: greenyellow;
+}
+#movies {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+}
+#popular_movies img{
+    height: 350px;
+    width: 200px;
+    border: 2px solid white;
+    border-radius: 3% ;
+
+}
+#popular_movies img:hover{
+    border-color: greenyellow;
+}
+#popular_movies {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+}
+.popular_title{
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(yellow,black);
+    height: 40px;
+}
+.popular_title h3{
+    margin: 10px;
+}
+
+.well{
+    margin: 10px;
+
+}
+.well h6{
+    margin-top: 7px;
+    justify-content: center;
+    font-size: medium;
+}
+.well p{
+    color: rgb(57, 255, 57);
+}
+.well svg:hover{
+    color: black;
+}
+.well button{
+    margin-bottom: 0px;
+}
+#genres{
+    display: flex;
+    
+}
+
+
+.jumbotron{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    
+}
+.jumbotron div{
+    margin: 10px;
+}
+.image_prop img{
+    height: 400px;
+    width: 250;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.details_prop button{
+    justify-content: center;
+    align-content: center;
+}
+.details_prop p{
+    margin-top: 5px;
+    margin-left: 10%;
+}
+footer{
+    color:aliceblue;
+    background-color: rgb(5, 5, 5);
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+}
+.company{
+    font-family: "Allerta Stencil", Sans-serif;
+    justify-content: center;
+    text-align: center;
+    border-right: dashed;
+}
+.company img{
+    height: 100px;
+    width: 70px;
+}
+.newsletter{
+    justify-content: center;
+    text-align: center;
+    border-right: dashed;
+}
+.contact{
+    justify-content: center;
+    text-align: center;
+}
+.contact h6{
+    font-size: 15px;
+    font-weight: 300;
+}
+.social-media{
+    justify-content: center;
+    text-align: center;
+    background-color: aliceblue;
+}
+.social-media a{
+    margin: 15px;
+    text-decoration: none;
+    font-size: 24px;
+}
+.social-media a:hover{
+    box-shadow: 0 3px 0 0;
+    transform: translateY(-3px);
+    transition: ease-in 0.4s;
+}
+.copyright-1{
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+.copyright-1 a{
+    text-decoration: none;
+}
+
+
+
+@media(max-width:800px){
+    #movies{
+        display: grid;
+        grid-template-columns:1fr;
+    }
+    #popular_movies{
+        display: grid;
+        grid-template-columns:1fr;
+    }
+    #darknav{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #darknav button{
+        margin-left: 50px;
+    }
+    #searchForm input{
+        width: 55%;
+    }
+
+    .image_prop img{
+        height: 250px;
+        width: 150;
+        margin: 10px;
+        border: 2px solid white;
+        border-radius: 5px;
+    }
+    .footer-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        border: none;
+    }
+    .company{
+        margin-top: 10px;
+        border: dashed;
+    }
+    .newsletter{
+        border-right:none;
+    }
+    .contact{
+        text-align: center;
+        border-top: dashed;
+    }
+}
